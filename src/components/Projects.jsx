@@ -8,8 +8,8 @@ const projects = [
     path: '~/projects/vox',
     command: 'cat README.md',
     description:
-      'An AI-powered web application for car dealerships to never miss out on leads \
-       that lets customers view, compare, book test drives, and buy cars all through an AI voice assistant.',
+      'An AI-powered web application for car dealerships to never miss out on leads ' +
+       'that lets customers view, compare, book test drives, and buy cars all through an AI voice assistant.',
     techStack: ['React', 'Python', 'MiniMax', 'Moss', 'LiveKit', 'Unsiloed'],
     sourceUrl: 'https://github.com/ayushb2005/Vox',
   },
