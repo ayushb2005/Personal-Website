@@ -1,13 +1,26 @@
+import AWSLogo from "../Images/SkillsImages/AWS.svg";
+import GithubLogo from "../Images/SkillsImages/Github.svg";
+import JavaLogo from "../Images/SkillsImages/Java.svg";
+import JavascriptLogo from "../Images/SkillsImages/Javascript.svg";
+import NodejsLogo from "../Images/SkillsImages/Nodejs.svg";
+import PostgresLogo from "../Images/SkillsImages/Postgres.svg";
+import PythonLogo from "../Images/SkillsImages/Python.svg";
+import PyTorchLogo from "../Images/SkillsImages/PyTorch.svg";
+import ReactLogo from "../Images/SkillsImages/React.svg";
+import TypescriptLogo from "../Images/SkillsImages/Typescript.svg";
+import SpringBoot from "../Images/SkillsImages/SpringBoot.svg";
+import Databricks from "../Images/SkillsImages/Databricks.svg";
+
 const skillGroups = [
   {
     title: 'Languages',
     accent: 'from-[#9f85ff] to-[#6d50f5]',
     icon: '</>',
     skills: [
-      { name: 'Python', level: 90 },
-      { name: 'JavaScript', level: 88 },
-      { name: 'TypeScript', level: 84 },
-      { name: 'Java', level: 80 },
+      { name: 'Python', level: 90, icon: PythonLogo },
+      { name: 'JavaScript', level: 88, icon: JavascriptLogo },
+      { name: 'TypeScript', level: 84, icon: TypescriptLogo},
+      { name: 'Java', level: 80, icon: JavaLogo},
     ],
   },
   {
@@ -15,10 +28,10 @@ const skillGroups = [
     accent: 'from-[#1b1a5e] to-[#211a68]',
     icon: '{ }',
     skills: [
-      { name: 'React', level: 89 },
-      { name: 'Node.js', level: 83 },
-      { name: 'Spring Boot', level: 76 },
-      { name: 'Flutter', level: 72 },
+      { name: 'React', level: 89, icon: ReactLogo },
+      { name: 'Node.js', level: 83, icon: NodejsLogo },
+      { name: 'Spring Boot', level: 76, icon: SpringBoot},
+      { name: 'PyTorch', level: 72, icon: PyTorchLogo },
     ],
   },
   {
@@ -26,10 +39,10 @@ const skillGroups = [
     accent: 'from-[#111b4d] to-[#1a1c61]',
     icon: '[]',
     skills: [
-      { name: 'AWS', level: 87 },
-      { name: 'MongoDB', level: 78 },
-      { name: 'Databricks', level: 73 },
-      { name: 'Git / Linux', level: 86 },
+      { name: 'AWS', level: 87, icon: AWSLogo },
+      { name: 'PostGres', level: 78, icon: PostgresLogo},
+      { name: 'Databricks', level: 73, icon: Databricks },
+      { name: 'Git / Linux', level: 86, icon: GithubLogo },
     ],
   },
 ];
@@ -75,7 +88,11 @@ function Skills() {
               >
                 <div className="flex flex-1 flex-col items-center justify-center px-6 py-8 text-center">
                   <div className="mb-6 flex h-24 w-24 items-center justify-center rounded-[24px] border border-dashed border-[#7455ff]/30 bg-[#f7f4ff] text-xs uppercase tracking-[0.24em] text-[#9079ff]/50">
-                    Empty
+                      {skill.icon ? (
+                        <img src={skill.icon} alt={skill.name} className="h-16 w-16 object-contain" />
+                      ) : (
+                        <span className="text-xs uppercase tracking-[0.24em] text-[#9079ff]/50">Empty</span>
+                      )}
                   </div>
                   <h4 className="font-['Space_Grotesk'] text-3xl font-bold text-[#475569]">
                     {skill.name}

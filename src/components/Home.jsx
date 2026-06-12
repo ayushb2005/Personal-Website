@@ -1,7 +1,7 @@
 const metrics = [
   { label: 'Experience', value: '3 Years' },
   { label: 'Favorite Languages', value: 'Python/TS/JS' },
-  { label: 'Deployments', value: '128+ Successful' },
+  { label: 'Github Contributions', value: '278+ in 2026' },
 ];
 
 function Home() {
