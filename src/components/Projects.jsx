@@ -2,37 +2,60 @@ import { useEffect, useState } from 'react';
 
 const projects = [
   {
+    id: 'vox',
+    name: 'Vox',
+    version: 'v1.4.2',
+    path: '~/projects/vox',
+    command: 'cat README.md',
+    description:
+      'An AI-powered web application for car dealerships to never miss out on leads \
+       that lets customers view, compare, book test drives, and buy cars all through an AI voice assistant.',
+    techStack: ['React', 'Python', 'MiniMax', 'Moss', 'LiveKit', 'Unsiloed'],
+    sourceUrl: 'https://github.com/ayushb2005/Vox',
+  },
+  {
     id: 'whisperboard',
     name: 'WhisperBoard',
     version: 'v1.4.2',
     path: '~/projects/whisperboard',
     command: 'cat README.md',
     description:
-      'An AI-powered collaboration workspace focused on clean note capture, structured idea flow, and fast iteration across writing sessions.',
-    techStack: ['React', 'Node.js', 'OpenAI API', 'Vercel'],
-    sourceUrl: 'https://github.com/ayushb2005',
+      'An AI-powered web application that has a bot to join Google Meets, take notes, and the display a Miro Diagram of topics, insights, decisions, and actions from the meeting.',
+    techStack: ['React', 'Python', 'Websockets', 'Attendee API', 'Gemini API'],
+    sourceUrl: 'https://github.com/ayushb2005/whisperboard',
   },
   {
-    id: 'portfolio_os',
-    name: 'Portfolio_OS',
+    id: 'portfolio',
+    name: 'Portfolio',
     version: 'v2.0.0',
-    path: '~/projects/portfolio_os',
+    path: '~/projects/portfolio',
     command: 'cat SYSTEM.md',
     description:
-      'A one-page portfolio system with a terminal-inspired interface, responsive sections, and interactive project previews built to feel cinematic instead of generic.',
+      'A one-page portfolio website with a terminal-inspired interface',
     techStack: ['React', 'Tailwind CSS', 'CRA', 'Responsive UI'],
-    sourceUrl: 'https://github.com/ayushb2005',
+    sourceUrl: 'https://github.com/ayushb2005/Personal-Website',
   },
   {
-    id: 'dataforge',
-    name: 'DataForge',
-    version: 'v0.9.8',
-    path: '~/projects/dataforge',
-    command: 'cat ARCHITECTURE.md',
+    id: 'hotel_booking_prediction',
+    name: 'Hotel Booking Prediction',
+    version: 'v2.0.0',
+    path: '~/projects/hotel_booking_prediction',
+    command: 'cat SYSTEM.md',
     description:
-      'A scalable data workflow project centered on transforming raw inputs into reliable analytics pipelines and deployment-ready backend services.',
-    techStack: ['Python', 'TypeScript', 'PostgreSQL', 'Docker'],
-    sourceUrl: 'https://github.com/ayushb2005',
+      'Built and evaluated machine learning models to predict hotel booking cancellations using exploratory data analysis, feature engineering, and classification techniques. Compared Logistic Regression, Random Forest, and XGBoost to identify key factors influencing reservation cancellations.',
+    techStack: ['Jupyter Notebook', 'Python'],
+    sourceUrl: 'https://github.com/ayushb2005/hotel_booking_prediction',
+  },
+    {
+    id: 'rapid_cart',
+    name: 'Rapid Cart',
+    version: 'v2.0.0',
+    path: '~/projects/rapid_cart',
+    command: 'cat SYSTEM.md',
+    description:
+      'Built a fullstack application for a E-Commerce Store similar to Amazon where users can add to cart, delete, and checkout items.',
+    techStack: ['Java', 'Spring Boot','Mongo DB', 'React', 'AWS', 'NGINX'],
+    sourceUrl: 'https://github.com/ayushb2005/RapidCart',
   },
 ];
 
