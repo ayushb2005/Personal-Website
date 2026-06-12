@@ -15,11 +15,12 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "npm run tailwind:prod && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "tailwind:build": "tailwindcss -i ./src/styles/tailwind.css -o ./src/tailwind.output.css --watch",
-    "tailwind:once": "tailwindcss -i ./src/styles/tailwind.css -o ./src/tailwind.output.css"
+    "tailwind:once": "tailwindcss -i ./src/styles/tailwind.css -o ./src/tailwind.output.css",
+    "tailwind:prod": "tailwindcss -i ./src/styles/tailwind.css -o ./src/tailwind.output.css --minify"
   },
   "eslintConfig": {
     "extends": [

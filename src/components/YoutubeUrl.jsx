@@ -1,5 +1,4 @@
-const YouTubeShort = ({ url }) => {
-    // Extract the video ID from a Shorts URL
+function YouTubeShort({ url }) {
     const videoId = url.split("/shorts/")[1]?.split("?")[0];
     const embedUrl = `https://www.youtube.com/embed/${videoId}`;
   
@@ -8,8 +7,8 @@ const YouTubeShort = ({ url }) => {
         style={{
           position: "relative",
           width: "100%",
-          maxWidth: 200, // smaller width for more compact display
-          aspectRatio: "9 / 16", // keeps vertical format
+          maxWidth: 200,
+          aspectRatio: "9 / 16",
         }}
       >
         <iframe
