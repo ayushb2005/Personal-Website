@@ -18,8 +18,8 @@ const skillGroups = [
     icon: '</>',
     skills: [
       { name: 'Python', level: 90, icon: PythonLogo },
-      { name: 'JavaScript', level: 88, icon: JavascriptLogo },
-      { name: 'TypeScript', level: 84, icon: TypescriptLogo},
+      { name: 'JavaScript', level: 90, icon: JavascriptLogo },
+      { name: 'TypeScript', level: 90, icon: TypescriptLogo},
       { name: 'Java', level: 80, icon: JavaLogo},
     ],
   },
@@ -28,10 +28,10 @@ const skillGroups = [
     accent: 'from-[#1b1a5e] to-[#211a68]',
     icon: '{ }',
     skills: [
-      { name: 'React', level: 89, icon: ReactLogo },
-      { name: 'Node.js', level: 83, icon: NodejsLogo },
-      { name: 'Spring Boot', level: 76, icon: SpringBoot},
-      { name: 'PyTorch', level: 72, icon: PyTorchLogo },
+      { name: 'React', level: 90, icon: ReactLogo },
+      { name: 'Node.js', level: 85, icon: NodejsLogo },
+      { name: 'Spring Boot', level: 70, icon: SpringBoot},
+      { name: 'PyTorch', level: 60, icon: PyTorchLogo },
     ],
   },
   {
@@ -42,7 +42,7 @@ const skillGroups = [
       { name: 'AWS', level: 87, icon: AWSLogo },
       { name: 'PostGres', level: 78, icon: PostgresLogo},
       { name: 'Databricks', level: 73, icon: Databricks },
-      { name: 'Git / Linux', level: 86, icon: GithubLogo },
+      { name: 'Git / Linux', level: 92, icon: GithubLogo },
     ],
   },
 ];
@@ -76,7 +76,7 @@ function Skills() {
               <div className="mb-8 flex h-20 w-20 items-center justify-center rounded-[22px] border border-white/20 text-3xl font-semibold text-white/55">
                 {group.icon}
               </div>
-              <h3 className="font-['Space_Grotesk'] text-4xl font-bold text-white">
+              <h3 className="max-w-full font-['Space_Grotesk'] text-2xl leading-tight font-bold break-all text-white sm:text-3xl">
                 {group.title}
               </h3>
             </div>
