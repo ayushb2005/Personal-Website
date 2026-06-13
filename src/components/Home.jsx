@@ -38,7 +38,7 @@ function Home() {
             I love building scalable software, data-driven systems, and AI-powered applications.
         </p>
 
-        <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center">
+        {/* <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center">
           <a
             href="#projects"
             className="inline-flex min-h-14 items-center justify-center border border-[#23ff4f] bg-[#1bff43] px-7 font-['Share_Tech_Mono'] text-sm font-semibold uppercase tracking-[0.2em] text-[#03210a] transition hover:-translate-y-0.5 hover:bg-[#74ff8f]"
@@ -52,7 +52,7 @@ function Home() {
             $ View_Resume
             <span className="ml-3 text-base">{'->'}</span>
           </a>
-        </div>
+        </div> */}
 
         <div className="mt-16 grid gap-4 border-t border-[#5bff87]/10 pt-8 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8 lg:pt-10">
           {metrics.map((metric) => (
